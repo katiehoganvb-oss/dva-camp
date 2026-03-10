@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DVA Summer Camp 2026</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        @keyframes holoShift {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 200% 50%; }
+        }
+        
+        @keyframes sparkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+        
+        @keyframes jumpUp {
+            0% { 
+                bottom: -200px;
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% { 
+                bottom: calc(100vh + 200px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel">
+        const { useState, useEffect, useRef } = React;
+        
+        // ============================================
+        // 🎯 YOUR SQUARE PAYMENT LINKS (UPDATED!)
+        // ============================================
+        const CONFIG = {
+            squareMultiSportLink: "https://square.link/u/wWJLtU9n",
+            squareVolleyballLink: "https://square.link/u/vaTTmfWE",
+            
+            multiSportPrice: 350,
+            multiSportEarlyBird: 350,
+            volleyballPrice: 275,
+            volleyballEarlyBird: 275,
+            earlyBirdDeadline: "June 1, 2026",
+            
+            location: "South Florida (Location TBD)",
+            
+            multiSportVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ",
+            volleyballVideo: "https://www.youtube.com/embed/dQw4w9WgXcQ"
+        };
+        
+        const SPARKY_IMAGE = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA2sAAAUhCAYAAAAVphygAAEAAElEQVR4nMz9a9c0O3IdiO3Ies7p091ki9RQ1EgeSeMZL/uLf4P/vexZtjUeaWl5dDNFyRKp0Y0Um2RfzlsZ/gDsiB0BZFY972lq[...]";
+    </script>
+</body>
+</html>
